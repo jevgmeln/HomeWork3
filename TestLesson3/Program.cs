@@ -3,10 +3,20 @@
 
 using TestLesson3;
 
-Person person = new Person("Eugene");
+
+
+
+Console.Write("Please, enter your name:");
+string? name = Console.ReadLine();
+
+Person person = new Person(name);
+
+
+Console.Write("Please, enter your age:");
+person.Age = int.Parse(Console.ReadLine());
 
 //person.Name = "Eugene";
-person.Age = 33;
+//person.Age = 33;
 person.IsMale = true;
 
 person.Greeting();
@@ -53,9 +63,14 @@ personWithCar.Name = "Armands";
 personWithCar.Car = new Car();
 personWithCar.Car.Model = "Tesla";
 personWithCar.Car.CarNumber = "LL-3567";
+personWithCar.Car.Speed = 130;
+
+
 
 personWithCar.Car.BeepBeep();
-
- 
+personWithCar.Car.SakamBraukt();
+personWithCar.Car.PalielinaAtrumu();
+personWithCar.Car.SamazinaAtrumu();
+personWithCar.Car.MasinaStop();
 
 
