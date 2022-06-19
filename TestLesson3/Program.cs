@@ -29,6 +29,8 @@ Console.WriteLine(IsAnnaAdult2);
 
 
 //Uzdevums TELEFONS
+Console.WriteLine("Uzdevums Telefons");
+
 Phone iPhone12 = new();
 
 iPhone12.Brand = "Apple";
@@ -40,3 +42,20 @@ iPhone12.PhoneCharacteristics();
 
 iPhone12.Calling();
 iPhone12.SendSms();
+
+
+//Uzdevums MASINA
+Console.WriteLine("Uzdevums Masina");
+
+Person personWithCar = new Person();
+personWithCar.Name = "Armands";
+
+personWithCar.Car = new Car();
+personWithCar.Car.Model = "Tesla";
+personWithCar.Car.CarNumber = "LL-3567";
+
+personWithCar.Car.BeepBeep();
+
+ 
+
+

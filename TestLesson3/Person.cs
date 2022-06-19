@@ -28,6 +28,8 @@ namespace TestLesson3
             }
 		}
 
+		public Car Car { get; set; }
+
 		public void Greeting()
         {
 			Console.WriteLine($"Hello, My name is: {Name} \n and I am {Age} And I am a man {IsMale}");

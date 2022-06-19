@@ -9,7 +9,10 @@ namespace TestLesson3
 
         public double Speed { get; set; }
 
-
+        public void BeepBeep()
+        {
+            Console.WriteLine($"{Model} Beep Beep");
+        }
 
     }
 }
